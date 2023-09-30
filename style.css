@@ -1,6 +1,11 @@
 
 
+*:focus
+{
+    outline: 5px dotted  rgba(255, 117, 0, 1) ;
+    outline-offset: 3px;
 
+}
 body 
 {
     font-size: 16px;
@@ -16,18 +21,20 @@ ul li
 .site-header
 {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
 
    background-color: #fff;   
 }
-
-.sity-header img 
+.logo-link
 {
-    width: 227px;
-    height: 59.18px;
-
+    transition:opacity 0.4s ease;
 }
+.logo-link:active
+{
+   opacity:0.5;
+}
+
 .navbar-link
 {
     display: flex;
@@ -35,26 +42,41 @@ ul li
 }
 .sitenav-list
 {
-    width: 500px;
     display: flex;
-    justify-content: space-around;
 }
 .sitenav-link
 {
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: bold;
     line-height: 15px;
     letter-spacing:0.5px;
     text-transform: uppercase;
     text-decoration: none;
     color: #000;
+    transition: color 0.4s ease, opacity 0.4s ease;
+}
+.sitenav-link:hover
+{
+    color:  rgba(255, 117, 0, 1);
+}
+.sitenav-link:active
+{
+    opacity: 0.6;
 }
 .main-link
 {
     background-color: rgba(255, 117, 0, 1);
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
-
+    transition: opacity 0.4s ease;
+}
+.main-link:hover
+{
+    opacity: 0.8;
+}
+.main-link:active
+{
+    opacity: 0.6;
 }
 .hero
 {
@@ -184,7 +206,20 @@ ul li
 .site-footer-top ul
 {
         display: flex;
+        align-items: center;
 
+}
+.site-footer-socials
+{
+    transition: opacity 0.4s ease, color 0.4s ease;
+}
+.site-footer-socials:hover
+{
+   color: rgba(255, 117, 0, 1);
+}
+.site-footer-socials:active
+{
+   opacity: 0.6;
 }
 .site-footer-line
 {
@@ -200,5 +235,13 @@ ul li
 {
     font-weight: 400;
     text-decoration: none;
+    transition: color 0.4s ease, opacity 0.4;
 }
-
+.footer-link a:hover
+{
+    color: rgba(255, 117, 0, 1);
+}
+.footer-link a:active
+{
+    opacity: 0.6;
+}
