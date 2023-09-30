@@ -13,10 +13,13 @@ ul li
 {
     list-style: none;
 }
-.sity-header
+.site-header
 {
-    width: 1440px;
-    height: 96.18px;    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+   background-color: #fff;   
 }
 
 .sity-header img 
@@ -24,6 +27,17 @@ ul li
     width: 227px;
     height: 59.18px;
 
+}
+.navbar-link
+{
+    display: flex;
+    align-items:center;
+}
+.sitenav-list
+{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
 }
 .sitenav-link
 {
@@ -37,14 +51,6 @@ ul li
 }
 .main-link
 {
-    display: block;
-    width: 155px;
-    line-height: 39px;
-    text-align: center;
-    border-radius: 4px;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
     background-color: rgba(255, 117, 0, 1);
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
@@ -52,6 +58,9 @@ ul li
 }
 .hero
 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     color: #fff;
     background-color: rgba(37, 36, 32, 1);
     overflow: hidden;
@@ -67,6 +76,7 @@ ul li
 }
 .hero-content
 {
+    
       background-color:rgba(37, 36, 32, 1);
 }
 .hero-content h2 
@@ -79,13 +89,7 @@ ul li
 }
 .hero-content p 
 {
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    text-align: left;
-    text-align: justify;
+    width: 390px;
 
 }
 .hero-img
@@ -123,11 +127,10 @@ ul li
     text-align: left;
     
 }
-.features ul li
+.features ul 
 {
-    width: 340px;
-    height:245px;
-    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
 }
 .features-info
 {
@@ -136,11 +139,11 @@ ul li
 }
 .promo
 {
-    top: 1555px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: rgba(37, 36, 32, 1);
     color: rgba(255, 255, 255, 1);
-    /* display: flex;
-    justify-content: space-around; */
 }
 .promo img 
 {
@@ -150,7 +153,6 @@ ul li
 .promo-content
 {
     width: 440px;
-    margin-top: 100px;
 }
 
 .promo h2 
@@ -173,13 +175,30 @@ ul li
 {
     background-color: rgba(248, 248, 248, 1);
 }
+.site-footer-top
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-footer-top ul
+{
+        display: flex;
+
+}
 .site-footer-line
 {
     background-color: rgba(37, 36, 32, 0.5);
     height: 2px;
+}
+.footer-link
+{
+    display: flex;
+    justify-content: space-around;
 }
 .footer-link  a 
 {
     font-weight: 400;
     text-decoration: none;
 }
+
