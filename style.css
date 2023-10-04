@@ -23,8 +23,10 @@ ul li
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-   background-color: #fff;   
+    border-top: 5px solid rgba(255, 117, 0, 1) ;
+    background-color: #fff; 
+    padding-top: 16px;  
+    padding-bottom: 16px;  
 }
 .logo-link
 {
@@ -43,6 +45,7 @@ ul li
 .sitenav-list
 {
     display: flex;
+    padding: 0;
 }
 .sitenav-link
 {
@@ -65,6 +68,12 @@ ul li
 }
 .main-link
 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 4px;
+    font-weight: bold;
     background-color: rgba(255, 117, 0, 1);
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
@@ -82,7 +91,9 @@ ul li
 {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 80px;
     color: #fff;
     background-color: rgba(37, 36, 32, 1);
     overflow: hidden;
@@ -92,8 +103,8 @@ ul li
 {
     width: 80px;
     margin-left: 150px;
-    margin-top: 20px;
-    
+    border: none;
+    margin: auto;
     border: 1px solid rgba(255, 117, 0, 1);
 }
 .hero-content
@@ -118,13 +129,15 @@ ul li
 {
     width: 510px;
     height: 510px;
-    top: 137px;
-    left: 760px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
-
+}
+.features
+{
+    padding-top: 210px;
+    padding-bottom: 210px;
 }
 .features-heading
 {
@@ -152,7 +165,7 @@ ul li
 .features ul 
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .features-info
 {
@@ -162,14 +175,17 @@ ul li
 .promo
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    border-radius: 12px;
     background-color: rgba(37, 36, 32, 1);
     color: rgba(255, 255, 255, 1);
 }
 .promo img 
 {
-    border-radius: 10px;
+    /* width: 440px;
+    height: 440px; */
+    border-radius: 12px;
  
 }
 .promo-content
@@ -191,10 +207,13 @@ ul li
 {
     width: 440px;
     height: 108px;
+    padding-bottom: 20px;
 }
 
 .site-footer
 {
+    padding-top: 56px;
+    padding-bottom: 56px;
     background-color: rgba(248, 248, 248, 1);
 }
 .site-footer-top
@@ -223,13 +242,15 @@ ul li
 }
 .site-footer-line
 {
+    border: none;
     background-color: rgba(37, 36, 32, 0.5);
     height: 2px;
+    padding: 0;
 }
 .footer-link
 {
     display: flex;
-    justify-content: space-around;
+    padding: 0;
 }
 .footer-link  a 
 {
